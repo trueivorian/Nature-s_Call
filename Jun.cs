@@ -7,11 +7,16 @@ public class Jun : Character {
 	private int level;
 	private enum weapon{};
 
+	void Awake(){
+
+		//Initialise player components
+		myBody = GetComponent<Rigidbody2D> (); 
+		anim = GetComponent<Animator> ();
+	}
+
 	// Use this for initialization
 	void Start () {
-		myBody;
-		anim;
-		health;	
+
 	}
 	
 	// Update is called once per frame
